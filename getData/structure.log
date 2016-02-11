@@ -1,0 +1,36 @@
+array(13) {
+  ["id"]=>
+  int(247)
+  ["img"]=>
+  string(17) "moon_shard_lg.png"
+  ["dname"]=>
+  string(10) "Moon Shard"
+  ["qual"]=>
+  string(6) "common"
+  ["cost"]=>
+  int(4000)
+  ["desc"]=>
+  string(141) "Use: Consume the Moon Shard to permanently gain 60 attack speed. Does not stack.<br />
+Passive: Shade Sight - Grants 250 bonus night vision."
+  ["notes"]=>
+  string(69) "The bonus night vision works during Night Stalker's Darkness ability."
+  ["attrib"]=>
+  string(213) "+ <span class="attribVal">120</span> <span class="attribValText">Attack Speed</span><br />
+SHADE BONUS NIGHT VISION: <span class="attribVal">250</span><br />
+CONSUME ATTACK SPEED: <span class="attribVal">60</span>"
+  ["mc"]=>
+  bool(false)
+  ["cd"]=>
+  bool(false)
+  ["lore"]=>
+  string(50) "Said to be a tear from the lunar goddess Selemene."
+  ["components"]=>
+  array(2) {
+    [0]=>
+    string(10) "hyperstone"
+    [1]=>
+    string(10) "hyperstone"
+  }
+  ["created"]=>
+  bool(true)
+}
