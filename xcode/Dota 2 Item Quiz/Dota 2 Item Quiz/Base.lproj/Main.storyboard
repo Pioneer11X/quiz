@@ -33,39 +33,60 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LbO-c3-deP">
-                                <rect key="frame" x="20" y="99" width="560" height="63"/>
+                                <rect key="frame" x="20" y="99" width="560" height="62.5"/>
                                 <color key="backgroundColor" red="0.76683226100000002" green="1" blue="0.89120356160000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Option 1"/>
+                                <connections>
+                                    <action selector="optionSeleceted:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SgH-5Z-AHh"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Myp-2J-iEl">
-                                <rect key="frame" x="20" y="170" width="560" height="62"/>
+                                <rect key="frame" x="20" y="169.5" width="560" height="63"/>
                                 <color key="backgroundColor" red="0.76683226100000002" green="1" blue="0.89120356160000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Option 2"/>
+                                <connections>
+                                    <action selector="optionSeleceted:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GRY-0E-3FT"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HhU-ew-JVb">
                                 <rect key="frame" x="20" y="311" width="560" height="63"/>
                                 <color key="backgroundColor" red="0.76683226100000002" green="1" blue="0.89120356160000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Option 4"/>
+                                <connections>
+                                    <action selector="optionSeleceted:" destination="BYZ-38-t0r" eventType="touchUpInside" id="m1K-vB-NgM"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hXE-Xh-9gO">
-                                <rect key="frame" x="20" y="382" width="560" height="63"/>
+                                <rect key="frame" x="20" y="382" width="560" height="62.5"/>
                                 <color key="backgroundColor" red="0.76683226100000002" green="1" blue="0.89120356160000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Option 5"/>
+                                <connections>
+                                    <action selector="optionSeleceted:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fYr-ut-sJg"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N6q-go-0bB">
-                                <rect key="frame" x="20" y="453" width="560" height="62"/>
+                                <rect key="frame" x="20" y="452.5" width="560" height="63"/>
                                 <color key="backgroundColor" red="0.76683226100000002" green="1" blue="0.89120356160000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Option 6"/>
+                                <connections>
+                                    <action selector="optionSeleceted:" destination="BYZ-38-t0r" eventType="touchUpInside" id="L5S-AX-FJL"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V8M-jp-ND6">
-                                <rect key="frame" x="20" y="523" width="560" height="63"/>
+                                <rect key="frame" x="20" y="523.5" width="560" height="62.5"/>
                                 <color key="backgroundColor" red="0.19737682754915231" green="0.78341346153846159" blue="0.46591553884514092" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Submit"/>
+                                <connections>
+                                    <action selector="submitPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qzn-4z-vpb"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y5d-j7-BlP">
-                                <rect key="frame" x="20" y="240" width="560" height="63"/>
+                                <rect key="frame" x="20" y="240.5" width="560" height="62.5"/>
                                 <color key="backgroundColor" red="0.76683226100000002" green="1" blue="0.89120356160000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Option 3"/>
+                                <connections>
+                                    <action selector="optionSeleceted:" destination="BYZ-38-t0r" eventType="touchUpInside" id="98f-sN-bLu"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.67559668237399795" green="0.78171041940791031" blue="0.78986378205128205" alpha="1" colorSpace="calibratedRGB"/>
@@ -109,6 +130,15 @@
                             <constraint firstItem="LbO-c3-deP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yLl-DY-9Ol"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="questionLabel" destination="wdj-Ei-pOB" id="NbC-ku-25b"/>
+                        <outletCollection property="optionButtons" destination="LbO-c3-deP" collectionClass="NSMutableArray" id="3h9-ks-PUO"/>
+                        <outletCollection property="optionButtons" destination="Myp-2J-iEl" collectionClass="NSMutableArray" id="2S4-XE-8zQ"/>
+                        <outletCollection property="optionButtons" destination="y5d-j7-BlP" collectionClass="NSMutableArray" id="Lhj-qu-XQt"/>
+                        <outletCollection property="optionButtons" destination="HhU-ew-JVb" collectionClass="NSMutableArray" id="30C-ft-2RB"/>
+                        <outletCollection property="optionButtons" destination="hXE-Xh-9gO" collectionClass="NSMutableArray" id="FRi-g9-5tl"/>
+                        <outletCollection property="optionButtons" destination="N6q-go-0bB" collectionClass="NSMutableArray" id="S33-wU-xJY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
