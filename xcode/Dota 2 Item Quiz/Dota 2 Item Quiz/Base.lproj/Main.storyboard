@@ -33,7 +33,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LbO-c3-deP">
-                                <rect key="frame" x="20" y="99" width="560" height="62.5"/>
+                                <rect key="frame" x="20" y="99" width="560" height="63"/>
                                 <color key="backgroundColor" red="0.76683226100000002" green="1" blue="0.89120356160000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Option 1"/>
                                 <connections>
@@ -41,7 +41,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Myp-2J-iEl">
-                                <rect key="frame" x="20" y="169.5" width="560" height="63"/>
+                                <rect key="frame" x="20" y="169" width="560" height="63"/>
                                 <color key="backgroundColor" red="0.76683226100000002" green="1" blue="0.89120356160000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Option 2"/>
                                 <connections>
@@ -57,7 +57,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hXE-Xh-9gO">
-                                <rect key="frame" x="20" y="382" width="560" height="62.5"/>
+                                <rect key="frame" x="20" y="382" width="560" height="63"/>
                                 <color key="backgroundColor" red="0.76683226100000002" green="1" blue="0.89120356160000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Option 5"/>
                                 <connections>
@@ -65,7 +65,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N6q-go-0bB">
-                                <rect key="frame" x="20" y="452.5" width="560" height="63"/>
+                                <rect key="frame" x="20" y="452" width="560" height="63"/>
                                 <color key="backgroundColor" red="0.76683226100000002" green="1" blue="0.89120356160000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Option 6"/>
                                 <connections>
@@ -73,7 +73,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V8M-jp-ND6">
-                                <rect key="frame" x="20" y="523.5" width="560" height="62.5"/>
+                                <rect key="frame" x="20" y="523" width="560" height="63"/>
                                 <color key="backgroundColor" red="0.19737682754915231" green="0.78341346153846159" blue="0.46591553884514092" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Submit"/>
                                 <connections>
@@ -81,11 +81,25 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y5d-j7-BlP">
-                                <rect key="frame" x="20" y="240.5" width="560" height="62.5"/>
+                                <rect key="frame" x="20" y="240" width="560" height="63"/>
                                 <color key="backgroundColor" red="0.76683226100000002" green="1" blue="0.89120356160000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Option 3"/>
                                 <connections>
                                     <action selector="optionSeleceted:" destination="BYZ-38-t0r" eventType="touchUpInside" id="98f-sN-bLu"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Result" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vVo-E2-RF5">
+                                <rect key="frame" x="276" y="28" width="48" height="544"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vbF-TT-1Lx">
+                                <rect key="frame" x="20" y="523" width="560" height="62"/>
+                                <color key="backgroundColor" red="0.1803921568627451" green="0.75686274509803919" blue="0.39215686274509803" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="New Round!"/>
+                                <connections>
+                                    <action selector="reloadButtonFunction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="W2q-94-YGx"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -94,12 +108,16 @@
                             <constraint firstItem="N6q-go-0bB" firstAttribute="height" secondItem="hXE-Xh-9gO" secondAttribute="height" id="1XO-Pd-S8z"/>
                             <constraint firstItem="hXE-Xh-9gO" firstAttribute="top" secondItem="HhU-ew-JVb" secondAttribute="bottom" constant="8" id="2na-HL-YDF"/>
                             <constraint firstItem="Myp-2J-iEl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3BX-iQ-qQP"/>
+                            <constraint firstItem="vVo-E2-RF5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4zA-yg-fmM"/>
+                            <constraint firstItem="vbF-TT-1Lx" firstAttribute="width" secondItem="V8M-jp-ND6" secondAttribute="width" id="7bP-sb-NrD"/>
                             <constraint firstItem="N6q-go-0bB" firstAttribute="top" secondItem="hXE-Xh-9gO" secondAttribute="bottom" constant="8" id="8AW-iM-V5W"/>
                             <constraint firstItem="HhU-ew-JVb" firstAttribute="top" secondItem="y5d-j7-BlP" secondAttribute="bottom" constant="8" id="8pf-JH-rFI"/>
+                            <constraint firstItem="vbF-TT-1Lx" firstAttribute="centerY" secondItem="V8M-jp-ND6" secondAttribute="centerY" id="8v4-g2-K5d"/>
                             <constraint firstItem="Myp-2J-iEl" firstAttribute="height" secondItem="LbO-c3-deP" secondAttribute="height" id="9L8-zj-kgY"/>
                             <constraint firstItem="LbO-c3-deP" firstAttribute="top" secondItem="wdj-Ei-pOB" secondAttribute="bottom" constant="8" id="Fkk-HG-pb3"/>
                             <constraint firstItem="V8M-jp-ND6" firstAttribute="top" secondItem="N6q-go-0bB" secondAttribute="bottom" constant="8" id="K2b-ah-WsE"/>
                             <constraint firstAttribute="trailingMargin" secondItem="V8M-jp-ND6" secondAttribute="trailing" id="KMN-4r-UiK"/>
+                            <constraint firstItem="vbF-TT-1Lx" firstAttribute="centerX" secondItem="V8M-jp-ND6" secondAttribute="centerX" id="L2d-FV-nOp"/>
                             <constraint firstItem="hXE-Xh-9gO" firstAttribute="width" secondItem="HhU-ew-JVb" secondAttribute="width" id="LMh-m7-n8R"/>
                             <constraint firstAttribute="leadingMargin" secondItem="N6q-go-0bB" secondAttribute="leading" id="LUy-fT-g0E"/>
                             <constraint firstItem="LbO-c3-deP" firstAttribute="height" secondItem="wdj-Ei-pOB" secondAttribute="height" id="LWv-vM-TT7"/>
@@ -107,10 +125,12 @@
                             <constraint firstAttribute="trailingMargin" secondItem="N6q-go-0bB" secondAttribute="trailing" id="NU5-KK-bT3"/>
                             <constraint firstItem="hXE-Xh-9gO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PoO-cB-QF6"/>
                             <constraint firstItem="Myp-2J-iEl" firstAttribute="width" secondItem="LbO-c3-deP" secondAttribute="width" id="SKM-md-uww"/>
+                            <constraint firstItem="vbF-TT-1Lx" firstAttribute="height" secondItem="V8M-jp-ND6" secondAttribute="height" id="Vyz-gb-J2p"/>
                             <constraint firstItem="y5d-j7-BlP" firstAttribute="top" secondItem="Myp-2J-iEl" secondAttribute="bottom" constant="8" id="Xac-jZ-DGu"/>
                             <constraint firstItem="wdj-Ei-pOB" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="Y4C-to-2bi"/>
                             <constraint firstItem="N6q-go-0bB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YVD-cp-cGB"/>
                             <constraint firstItem="Myp-2J-iEl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YzY-aD-P8V"/>
+                            <constraint firstItem="vVo-E2-RF5" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="Ziy-ZT-gMq"/>
                             <constraint firstItem="N6q-go-0bB" firstAttribute="width" secondItem="hXE-Xh-9gO" secondAttribute="width" id="bzu-aJ-pnn"/>
                             <constraint firstItem="Myp-2J-iEl" firstAttribute="top" secondItem="LbO-c3-deP" secondAttribute="bottom" constant="8" id="etW-QD-9uu"/>
                             <constraint firstItem="V8M-jp-ND6" firstAttribute="height" secondItem="N6q-go-0bB" secondAttribute="height" id="gdy-8O-skg"/>
@@ -122,16 +142,21 @@
                             <constraint firstItem="y5d-j7-BlP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jzk-xC-yQV"/>
                             <constraint firstItem="wdj-Ei-pOB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kbi-o3-MLn"/>
                             <constraint firstItem="LbO-c3-deP" firstAttribute="width" secondItem="wdj-Ei-pOB" secondAttribute="width" id="n7j-sB-yPf"/>
+                            <constraint firstItem="vVo-E2-RF5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="oxs-74-o3d"/>
                             <constraint firstItem="wdj-Ei-pOB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qzw-f6-jpA"/>
                             <constraint firstItem="V8M-jp-ND6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="r1T-GS-ylg"/>
                             <constraint firstItem="V8M-jp-ND6" firstAttribute="width" secondItem="N6q-go-0bB" secondAttribute="width" id="rfO-xX-fYr"/>
                             <constraint firstItem="HhU-ew-JVb" firstAttribute="height" secondItem="y5d-j7-BlP" secondAttribute="height" id="uGE-hh-xuh"/>
+                            <constraint firstItem="vVo-E2-RF5" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="uj9-gB-bct"/>
                             <constraint firstAttribute="leadingMargin" secondItem="V8M-jp-ND6" secondAttribute="leading" id="wub-Lr-zAX"/>
                             <constraint firstItem="LbO-c3-deP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yLl-DY-9Ol"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="questionLabel" destination="wdj-Ei-pOB" id="NbC-ku-25b"/>
+                        <outlet property="reloadButton" destination="vbF-TT-1Lx" id="Feu-yv-BvY"/>
+                        <outlet property="resultLabel" destination="vVo-E2-RF5" id="nRv-8A-llt"/>
+                        <outlet property="submitButton" destination="V8M-jp-ND6" id="b3s-cK-6Xy"/>
                         <outletCollection property="optionButtons" destination="LbO-c3-deP" collectionClass="NSMutableArray" id="3h9-ks-PUO"/>
                         <outletCollection property="optionButtons" destination="Myp-2J-iEl" collectionClass="NSMutableArray" id="2S4-XE-8zQ"/>
                         <outletCollection property="optionButtons" destination="y5d-j7-BlP" collectionClass="NSMutableArray" id="Lhj-qu-XQt"/>
@@ -142,7 +167,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="380" y="302"/>
+            <point key="canvasLocation" x="686" y="-149"/>
         </scene>
     </scenes>
 </document>
