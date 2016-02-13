@@ -16,12 +16,17 @@ class ViewController: UIViewController {
     
     var selectedOptions = Array<String>()
     
+    @IBOutlet var resultLabel: UILabel!
+    
     var answerOptions = Array<String>()
 
     @IBOutlet var questionLabel: UILabel!
     
     @IBOutlet var optionButtons: [UIButton]!
     
+    @IBOutlet var submitButton: UIButton!
+    
+    @IBOutlet var reloadButton: UIButton!
     
     @IBAction func optionSeleceted(sender: UIButton) {
         let optionSelected = sender.titleLabel?.text
@@ -43,8 +48,7 @@ class ViewController: UIViewController {
         let answerCount = answerOptions.count
         
         if (selectedCount != answerCount){
-            view.backgroundColor = UIColor(red: 0.8, green: 0.2, blue: 0.2, alpha: 1)
-            questionLabel.text = "Lost"
+            lost()
             return
         }
         else{
@@ -52,8 +56,7 @@ class ViewController: UIViewController {
                 if selectedOptions.contains(answerOptions[i]){
                     selectedOptions = selectedOptions.filter{ $0 != answerOptions[i] }
                 }else{
-                    view.backgroundColor = UIColor(red: 0.8, green: 0.2, blue: 0.2, alpha: 1)
-                    questionLabel.text = "Lost"
+                    lost()
                     return
                 }
             }
@@ -63,11 +66,53 @@ class ViewController: UIViewController {
         return
     }
     
-    override func viewDidLoad() {
-//        print(optionButtons[0].backgroundColor)
+    func lost(){
+        view.backgroundColor = UIColor(red: 0.8, green: 0.2, blue: 0.2, alpha: 1)
+        for i in 0...5{
+            optionButtons[i].hidden = true
+        }
+        questionLabel.hidden = true
+        resultLabel.hidden = false
+        resultLabel.text = "Lost"
+        submitButton.hidden = true
+        reloadButton.hidden = false
+        return
+    }
+    
+    @IBAction func reloadButtonFunction(sender: UIButton) {
+        start()
+    }
+    
+    func start(){
+        
+        selectedOptions.removeAll()
+        answerOptions.removeAll()
+        
         let questionCreated = createQuestion(sampleQuestion)
         answerOptions = questionCreated.answers
         displayQuestion(questionCreated)
+        
+        for i in 0...5{
+            optionButtons[i].hidden = false
+            optionButtons[i].backgroundColor = UIColor(red: 0.766832, green: 1, blue: 0.891204, alpha: 1)
+        }
+        questionLabel.hidden = false
+        submitButton.hidden = false
+        resultLabel.hidden = true
+        reloadButton.hidden = true
+    }
+    
+    override func viewDidLoad() {
+//        print(optionButtons[0].backgroundColor)
+/*        let questionCreated = createQuestion(sampleQuestion)
+        answerOptions = questionCreated.answers
+        displayQuestion(questionCreated)
+        
+        resultLabel.hidden = true
+        reloadButton.hidden = true
+*/
+        start()
+        
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }

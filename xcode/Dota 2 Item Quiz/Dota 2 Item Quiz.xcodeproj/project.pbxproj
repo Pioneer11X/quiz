@@ -388,6 +388,7 @@
 				A04B5A711C6C8EBC00E0B03C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A04B5A721C6C8EBC00E0B03C /* Build configuration list for PBXNativeTarget "Dota 2 Item QuizTests" */ = {
 			isa = XCConfigurationList;
@@ -396,6 +397,7 @@
 				A04B5A741C6C8EBC00E0B03C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
