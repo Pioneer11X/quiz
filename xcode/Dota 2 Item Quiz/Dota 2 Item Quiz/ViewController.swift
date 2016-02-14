@@ -10,7 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    let sampleQuestion = ["Poor Mans Shield","Stout Shield","Slippers of Agility","Slipper of Agility"]
+    let sampleQuestion = [["Poor Mans Shield","Stout Shield","Slippers of Agility","Slipper of Agility"],["Wand","branch","branch","Circlet","Stick"],["Aghanims","Point Booster","Club","Blade","Staff"]]
     
     let buffer = ["branch","Ogre Club","Blades of Attack","Pipe of Insight","Bubu","Nara"]
     
@@ -137,17 +137,22 @@ class ViewController: UIViewController {
         var answers : Array<String>
     }
     
-    func createQuestion( data: Array<String> ) -> questionStructure {
+    func createQuestion( data: Array<Array<String>> ) -> questionStructure {
+        
+        let numberOfQuestions = data.count
+        let randomNumber = Int(arc4random_uniform(UInt32(numberOfQuestions)))
+        
+        print ( "Question ", randomNumber, "selected")
         
         let limit = 6 // This is the maximum number of options we have i nour app
         
-        let question = data[0]
-        let numOfOptions = data.count
+        let question = data[randomNumber][0]
+        let numOfOptions = data[randomNumber].count
         
         var options = Array<String>()
         
         for i in 1...(numOfOptions-1) {
-            options.append(data[i])
+            options.append(data[randomNumber][i])
         }
         
         let answers = options
