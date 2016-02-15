@@ -10,7 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    let sampleQuestion = [["Poor Mans Shield","Stout Shield","Slippers of Agility","Slipper of Agility"],["Wand","branch","branch","Circlet","Stick"],["Aghanims","Point Booster","Club","Blade","Staff"]]
+    let sampleQuestion = [["Poor Mans Shield","Stout Shield","Slippers of Agility","Slipper of Agility"],["Wand","Branch","branches","Circlet","Stick"],["Aghanims","Point Booster","Club","Blade","Staff"]]
     
     let buffer = ["branch","Ogre Club","Blades of Attack","Pipe of Insight","Bubu","Nara"]
     
@@ -61,8 +61,7 @@ class ViewController: UIViewController {
                 }
             }
         }
-        view.backgroundColor = UIColor(red: 0.2, green: 0.8, blue: 0.2, alpha: 1)
-        questionLabel.text = "Won"
+        start()
         return
     }
     
